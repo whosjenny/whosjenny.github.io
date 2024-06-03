@@ -1,6 +1,6 @@
-.oswald-font {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900; 
+.main-font { 
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
 }
 
 .instrument-font-regular {
@@ -9,11 +9,6 @@
     font-style: normal;
   }
   
-  .instrument-font-italic {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
 
 a {
     color: inherit;
@@ -30,7 +25,7 @@ a:active {
 h1 { 
     font-size: 5em;
     margin: 0; 
-    color: #003ff9;
+    color: #00124a;
 }
 
 
@@ -39,7 +34,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     /* top margin */
-    margin-top: 3%;
+    margin-top: 2%;
     /* bottom margin */
     margin-bottom: 3%;
     /* background color */
@@ -49,21 +44,19 @@ body {
 nav ul li { 
     display: inline;
     margin-right: 85px; /* space between list items */
-    color: #a0ea00;
+    color: #edefee;
     /* font size */ 
     font-size: 1.2em;
     /* make these elements have oval buttons behind them */
     border-radius: 30px;
-    padding: 8px;
-    background-color: #003ff9; 
-
+    padding: 9px;
+    background-color: #00124a; 
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 
 .navbar nav {
@@ -74,7 +67,70 @@ hr {
     border: none;
     height: 2px;
     line-height: 0;
-    background-color: #e94c39;
+    background-color: #00124a;
     text-align: left;
     width: 75%;
+}
+
+h2 { 
+    font-size: 2.5em;
+    color: #00124a;
+    padding-top: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 230px; /* add left margin to move projects to the right */
+    flex-direction: column;
+    margin-top: -90px; /* move projects up */
+}
+
+.project-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #00124a;
+    padding: 15px;
+    border-radius: 0px;
+    border: 2px solid #00124a;
+    text-align: left;
+    width: 78%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-button:hover {
+    box-shadow: 0px 0px 7px 7px rgba(0, 18, 74, 0.35);
+}
+
+.project-button h2 {
+    font-family: 'Helvetica', sans-serif;
+    margin-top: -20px;
+    font-size: 1.5em;
+    display: inline;
+    margin-left: 5px;
+}
+
+.project-button h3 { 
+    font-family: "Instrument Serif", serif;
+    display: inline;
+    font-style: italic;
+    font-size: 1.4em;
+    color: #00124a;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.project-button p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px
 }
