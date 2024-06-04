@@ -33,11 +33,6 @@ header .name {
     color: #e5e4df;
 }
 
-header .name:hover {
-    color: #FF9FE5;
-    font-style: italic;
-}
-
 header .nav-buttons {
     margin-right: 3.5%;
     display: flex;
@@ -107,4 +102,71 @@ header .nav-buttons a:hover {
         padding-top: 150px; /* Adjust top padding for smaller screens */
         grid-template-columns: 1fr; /* Single column on small screens */
     }
+}
+
+u { 
+    text-decoration-color:#FF9FE5;
+}
+
+.project-detail {
+    margin: 5% 0;
+    padding: 20px;
+    padding-top: 20px; /* Ensure content is not hidden behind the fixed header */
+    color: #e5e4df;
+}
+
+.project-detail h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.project-detail .media {
+    margin-bottom: 20px;
+}
+
+.description { 
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #7d7b79;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #e5e4df;
+}
+
+.project-detail .description h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.project-detail .description p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.project-detail .description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-detail .description ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.embed-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.embed-container iframe {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    max-width: 60%;
+    background: #000;
+    margin-bottom: 20px;    
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 0;
 }
