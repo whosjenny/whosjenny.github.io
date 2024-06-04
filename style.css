@@ -2,21 +2,21 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0px;
     padding: 0;
-    background-color: #F8F1F5;
+    background-color: #1a1917;
 }
 
 .montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: #f0e0e9;
-    padding: 10px 20px;
+    background-color: #7d7b79;
+    padding: 25px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,6 +28,7 @@ header {
 header .name {
     font-size: 40px;
     font-weight: 600;
+    color: #e5e4df;
 }
 
 header .nav-buttons {
@@ -35,37 +36,40 @@ header .nav-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    flex: 100 100px;
+    flex: 1; /* Allow the nav buttons to take available space */
 }
 
 header .nav-buttons a {
     text-decoration: none;
-    color: #007bff;
-    font-size: 16px;
+    color: #e5e4df;
+    font-size: 18px;
     margin: 10px 20px;
 }
+
+hr { 
+    color: aqua;
+    background-color: aqua;}
 
 .projects {
     margin: 5% 0;
     padding: 20px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always create two columns */
+    gap: 20px;
 }
 
 .project {
-    margin-bottom: 20px;
     padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 5px solid #7d7b79;
+    border-radius: 15px;
     transition: background-color 0.3s;
+    text-decoration: none;
+    color: #e5e4df;
 }
 
 .project:hover {
-    background-color: #F8F1F5;
-}
-
-.project a {
-    display: block;
-    text-decoration: none;
-    color: #333;
+    background-color: #474645;
 }
 
 .project h3 {
@@ -75,4 +79,23 @@ header .nav-buttons a {
 
 .project p {
     margin: 20px 0 0 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .nav-buttons {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    header .nav-buttons a {
+        margin: 5px 5px;
+    }
+    .projects {
+        padding-top: 150px; /* Adjust top padding for smaller screens */
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
 }
