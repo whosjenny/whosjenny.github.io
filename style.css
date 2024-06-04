@@ -15,7 +15,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #7d7b79;
+    background-color: #1a1917;
     padding: 25px 20px;
     position: fixed;
     width: 100%;
@@ -23,12 +23,19 @@ header {
     left: 0;
     z-index: 1;
     flex-wrap: wrap;
+    border-bottom: 5px solid #FF9FE5;
 }
 
 header .name {
     font-size: 40px;
     font-weight: 600;
+    text-decoration: none;
     color: #e5e4df;
+}
+
+header .name:hover {
+    color: #FF9FE5;
+    font-style: italic;
 }
 
 header .nav-buttons {
@@ -46,14 +53,15 @@ header .nav-buttons a {
     margin: 10px 20px;
 }
 
-hr { 
-    color: aqua;
-    background-color: aqua;}
+header .nav-buttons a:hover {
+    color: #FF9FE5;
+    font-style: italic;
+}
 
 .projects {
     margin: 5% 0;
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 45px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Always create two columns */
     gap: 20px;
@@ -69,7 +77,8 @@ hr {
 }
 
 .project:hover {
-    background-color: #474645;
+    background-color: rgba(255,159,229, 0.75);
+    border: 5px solid #FF9FE5 ;
 }
 
 .project h3 {
