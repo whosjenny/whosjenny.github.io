@@ -153,20 +153,19 @@ u {
 }
 
 .embed-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 100px;
+    height: 0;
+    overflow: hidden;
+    max-width: 60%; /* Adjust the width as needed to make the video smaller */
+    height: 40vh;
+    margin: 0 auto; /* Center the video */
 }
 
 .embed-container iframe {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    max-width: 60%;
-    background: #000;
-    margin-bottom: 20px;    
+    position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     height: 100%;
-    border: 0;
 }
