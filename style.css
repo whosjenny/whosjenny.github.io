@@ -158,7 +158,7 @@ u {
     overflow: hidden;
     max-width: 60%; /* Adjust the width as needed to make the video smaller */
     height: 40vh;
-    margin: 0 auto; /* Center the video */
+    margin: 0 auto; 
 }
 
 .embed-container embed { 
@@ -183,4 +183,5 @@ u {
     margin-top: 2px; 
     margin-bottom: 0px; 
     padding-bottom: 10px; 
+    margin: 0 auto; 
 }

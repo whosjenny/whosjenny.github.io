@@ -26,21 +26,21 @@
         <i>OCaml, Graph Theory, Data Structures, Algorithms, Finite State Machines</i>
       </p>
       <div class="media">
-        
-      </div>
+        <div class="embed-container">
+          <img src="assets\nfa-dfa-conversion.png" alt="Graph representation of finite automata">
+        </div>
+    </div>
       <div class="description">
           <h3>Description</h3>
           <p>
-            Machine Learning model that predicts the success of artificial movies based on various features such as budget, promotion, genre, and more. Dataset consisted of 540 movies. Final project for CMSC 320: Intro to Data Science.
+            Implemented NFA and regular expression modules in OCaml, creating a regular expression interpreter and accompanying NFA-to-DFA converter, leveraging OCaml's type system and functional programming paradigms.
           </p>
           <h3>Details</h3>
           <ul>
-              <li>Developed a predictive model with > 79.6% accuracy.</li>
-              <li>Analyzed a dataset of 500+ films, including features such as genre, budget, cast, and release date, identifying budget as the most important feature.</li>
-              <li>Explored and preprocessed data from a variety of sources to identify key features influencing movie success.</li>
-              <li>Implemented various regression techniques to improve prediction accuracy.</li>
-              <li>Created visualizations to represent data trends and model performance.</li>
-              <li>Integrated the model into a web application for user-friendly interaction.</li>
+              <li>Implemented functions to handle NFA operations including <b>move</b>, <b>e_closure</b>, and <b>accept</b>, ensuring accurate state transitions and string acceptance.</li>
+              <li>Built a parser for regular expressions, transforming them into NFAs and providing string representations using the <b>regexp_to_nfa</b> and <b>regexp_to_string functions</b>.</li>
+              <li>Employed the viz.native script for visualizing NFAs with Graphviz, aiding in debugging and validation.</li>
+              <li>Leveraged functional programming techniques to implement recursive functions and higher-order functions for operations like epsilon closure and fixpoint iteration.</li>
           </ul>
       </div>
   </div>
