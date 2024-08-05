@@ -110,7 +110,7 @@ u {
 .project-detail {
     margin: 5% 0;
     padding: 20px;
-    padding-top: 20px; /* Ensure content is not hidden behind the fixed header */
+    padding-top: 20px;
     color: #e5e4df;
 }
 
